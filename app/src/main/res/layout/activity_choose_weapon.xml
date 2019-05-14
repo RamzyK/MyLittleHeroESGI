@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ChooseWeaponActivity">
+
+    <TextView
+        android:id="@+id/activity_choose_weapon_description_message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/your_starting_weapon"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/activity_choose_weapon_rcv"/>
+
+    <ImageView
+        android:id="@+id/activity_choose_weapon_weapon_preview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/activity_choose_weapon_description_message_tv"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_choose_weapon_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_weapon"
+        app:layout_constraintTop_toBottomOf="@id/activity_choose_weapon_description_message_tv"
+        />
+
+    <Button
+        android:id="@+id/activity_choose_weapon_show_summary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:text = "@string/activity_choose_weapon_show_summary_text"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/activity_choose_weapon_rcv"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

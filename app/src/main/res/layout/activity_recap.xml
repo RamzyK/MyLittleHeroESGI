@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.RecapActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_summary_text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/recap_activity_player_pseudo_tev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:hint="@string/pseudo_edit_text_hint"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/recap_activity_sexe_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:hint="@string/sexe_edit_text_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/recap_activity_birthdate_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:hint="@string/birthdate_edit_text_hint"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/recap_activity_weapon_type_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:hint="@string/recap_activity_weapon_type_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:text= "@string/beginning_weapon_text_view_text"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/recap_activity_beginning_weapon"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
